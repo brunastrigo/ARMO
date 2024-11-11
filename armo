@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .header {
+      background-color: #2f2e2e;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .header h1 {
+      font-size: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #ffb0cb;
+    }
+
+    .header p {
+      font-size: 18px;
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #2f2e2e;
+      padding: 10px 0;
+    }
+
+    .topnav a {
+      color: #ffb0cb;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      margin: 0 10px;
+      font-size: 20px;
+    }
+
+    .topnav a:hover {
+      background-color: #fcb041;
+      color: #2f2e2e;
+    }
+
+    .search-bar {
+      margin-left: 10px;
+      padding: 5px;
+      background-color: #656360;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    .search-bar input {
+      width: 200px;
+      padding: 8px;
+      border: 1px solid #656360;
+      border-radius: 5px;
+      outline: none;
+      background-color: #656360;
+      color: #fff;
+    }
+
+    .search-bar input:hover {
+      border: 1px solid #fcb041;
+    }
+
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 40px 5%;
+    }
+
+    .article {
+      position: relative;
+      background-color: #fff;
+      border-radius: 15px;
+      margin: 20px;
+      padding: 0; 
+      flex: 1 1 calc(33% - 40px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden; 
+      transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+    }
+
+    .article:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .article .image {
+      background-size: cover;
+      background-position: center; 
+      background-repeat: no-repeat;
+      height: 470px; 
+      width: 100%;
+      transition: background-color 0.3s ease; 
+    }
+
+    .article:hover .image {
+      background-color: rgba(0, 0, 0, 0.9); 
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff; 
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8); 
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .article:hover .text-overlay {
+      opacity: 1;
+    }
+
+    .text-overlay h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .text-overlay p {
+      font-size: 16px;
+    }
+
+    .no-underline {
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #f6f2f2;        
+      transition: color 0.3s ease;
+    }
+
+    a:visited {
+      color: #f6f2f2;
+    }
+
+    a:hover {
+      color: #fcb041;
+    }
+
+    a:active {
+      color: #2f2e2e;
+    }
+
+    .highlight {
+      width: 100%;
+      max-width: 1365px; 
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      background-color: #2f2e2e;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+      transition: transform 0.3s ease, box-shadow 0.3s ease-in-out; 
+    }
+
+    .highlight h2 {
+      font-size: 24px;
+      color: #ffb0cb;
+      text-align: center;
+      margin-bottom: 10px; 
+    }
+
+    .highlight-content {
+      display: flex; 
+      align-items: center;
+      gap: 20px; 
+    }
+
+    .highlight-content img {
+      width: 400px;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .highlight-content p {
+      flex: 1;
+      font-size: 16px;
+      color: #fefefe;
+      line-height: 1.6;
+    }
+
+    .highlight:hover {
+      transform: scale(1.05); 
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); 
+      cursor: pointer;
+    }
+
+    .news-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px 5%;
+    }
+
+    .news-card {
+      background-color: #2f2e2e;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: calc(33% - 20px);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .news-card:hover {
+      transform: scale(1.03);
+    }
+
+    .news-image {
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .news-image {
+      background-image: url('aurora.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 80vh; 
+      width: 100%;
+    }
+
+    .news-content {
+      padding: 15px;
+    }
+
+    .news-content h3 {
+      font-size: 20px;
+      color: #f1eeee;
+      margin-bottom: 10px;
+    }
+
+    .news-content p {
+      color: #e1d8d8;
+      font-size: 16px;
+    }
+
+    .about {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin: 20px 5%;
+      width: 90%;
+    }
+
+    .about h2 {
+      font-size: 24px;
+      color: #2f2e2e;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      color: #555;
+      font-size: 16px;
+    }
+
+    .footer {
+      background-color: #2f2e2e;
+      text-align: center;
+      padding: 30px 20px;
+      color: #ffb0cb;
+    }
+
+    .about-us {
+      background-color: #fff;
+      padding: 40px 5%;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgb(255, 255, 255);
+      margin: 20px 5%; 
+    }
+
+    .about-us h2 {
+      font-size: 32px;
+      color: #ffb0cb;
+      margin-bottom: 20px;
+    }
+
+    .about-us p {
+      color: #555;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+      }
+
+      .article {
+        flex: 1 1 100%;
+      }
+
+      .highlight-content {
+        flex-direction: column; 
+        align-items: center; 
+      }
+
+      .highlight-content img {
+        width: 80%; 
+        margin-bottom: 15px; 
+      }
+
+      .highlight p {
+        text-align: center; 
+      }
+
+      .topnav a {
+        font-size: 18px;
+        padding: 12px;
+      }
+
+      .search-bar input {
+        width: 100%;
+        padding: 8px;
+      }
+
+      .news-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <div class="header">
+    <h1><img src="ARMO.png" alt="Logo ARMO" style="width: 250px;"></h1>
+  </div>
+
+  
+  <div class="topnav">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Jornal</a>
+    <a href="#">Login</a>
+    <div class="search-bar">
+      <input type="text" placeholder="PESQUISAR...">
+    </div>
+  </div>
+
+
+  <div class="main-content">
+    <div class="article">
+      <div class="image" style="background-image: url('animalcordial.jpeg');">
+        <div class="text-overlay">
+          <h2><a href="ARMO2.html" class="no-underline">Terror</a></h2>
+          <p>Uma jornada sombria pelos medos mais profundos.</p>
+        </div>
+      </div>
+    </div>
+    <div class="article">
+      <div class="image" style="background-image: url('pretosaibrancofica.jpeg');">
+        <div class="text-overlay">
+          <h2>Ficção Científica</h2>
+          <p>Explorando os limites do possível e do desconhecido.</p>
+        </div>
+      </div>
+    </div>
+    <div class="article">
+      <div class="image" style="background-image: url('Sanguanel.jpg');">
+        <div class="text-overlay">
+          <h2>Fantasia</h2>
+          <p>Uma viagem ao extraordinário, onde o impossível se torna real.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="highlight">
+    <h2>Filme Destaque do Mês: A Herança</h2>
+    <div class="highlight-content">
+        <img src="herança.png" alt="Cena do filme 'A Herança'">
+        <p>Na estreia de João Cândido Zacharias no longa, A Herança mistura giallo e telenovela brasileira em um queer horror psicológico. Quando Thomas descobre ser herdeiro de uma casa de campo, ele e seu parceiro Beni desvendam os segredos obscuros de sua família. Um thriller inquietante sobre monstros familiares e mistérios do passado.</p>
+    </div>
+</div>
+
+  <div class="news-section">
+    <div class="news-card">
+      <div class="news-image" style="background-image: url('aurora.png');"></div>
+      <div class="news-content">
+        <h3>I Festival Aurora de Cinema Fantástico e Horror</h3>
+        <p>O evento é focado no cinema nacional e no talento paraibano, acontece de 14 a 17 de novembro, em João Pessoa, com mais de 30 filmes, entre curtas, longas, oficinas e debates.</p>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="news-image" style="background-image: url('livro.png');"></div>
+      <div class="news-content">
+        <h3>Cinema Fantástico Brasileiro: 100 Filmes Essenciais</h3>
+        <p>No dia 27 de setembro, a Abraccine, em parceria com o Grupo Editorial Letramento, lança o livro Cinema Fantástico Brasileiro: 100 Filmes Essenciais, na Cinemateca Brasileira. A obra reúne cem filmes que exploram o gênero fantástico no Brasil.</p>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="news-image" style="background-image: url('fantaspoa.png');"></div>
+      <div class="news-content">
+        <h3>XX Fantaspoa</h3>
+        <p>A 20ª edição do maior festival de cinema fantástico da América Latina acontece de 10 a 28 de abril em Porto Alegre, com 237 filmes de 54 países, incluindo 41 estreias mundiais. O evento contará com debates, masterclasses, festas e uma parceria com a plataforma Darkflix+.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="about-us">
+    <h2>Sobre</h2>
+    <h3>Bem-vindo ao ARMO!</h3>
+    <p>Somos uma plataforma dedicada ao cinema fantástico brasileiro com foco em terror, ficção científica e fantasia. O nome ARMO é uma referência ao movimento armorial, idealizado por Ariano Suassuna, que uniu a tradição cultural com a inovação artística. Aqui, celebramos o talento nacional e exploramos a riqueza do cinema brasileiro, onde a identidade se encontra com o extraordinário.
+</p>
+  </div>
+
+ <div class="footer">
+        <p>&copy; 2024 ARMO - Todos os direitos reservados.</p>
+        <p>Termos de Uso | Política de Privacidade | Contato</p>
+        <p>Endereço: Rua Marquês de Paranaguá, 111 - Consolação, São Paulo - SP, 01303-050</p>
+    </div>
+
+</body>
+</html>

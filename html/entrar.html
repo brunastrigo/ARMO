@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estiloentrar.css">
+  <script src="../js/scriptentrar.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-images-left">
+      <img src="../images/Sol.png" alt="Imagem Esquerda 1" class="header-image">
+      <img src="../images/Sol1.png" alt="Imagem Esquerda 2" class="header-image">
+      <img src="../images/Sol.png" alt="Imagem Esquerda 3" class="header-image">
+    </div>
+    
+    <div class="header-content">
+      <h1><img src="../images/ARMO.png" alt="Logo ARMO" style="width: 250px;"></h1>
+      <p>O MUNDO FANTÁSTICO DO CINEMA BRASILEIRO</p>
+    </div>
+
+    <div class="header-images-right">
+      <img src="../images/Sol1.png" alt="Imagem Direita 1" class="header-image">
+      <img src="../images/Sol.png" alt="Imagem Direita 2" class="header-image">
+      <img src="../images/Sol1.png" alt="Imagem Direita 3" class="header-image">
+    </div>
+  </div>
+
+  <div class="topnav">
+    <a href="../index.html">Início</a>
+    <a href="../html/sobre.html">Sobre</a>
+    <a href="../html/jornal.html">Jornal</a>
+    <a href="../html/entrar.html"class="active">ENTRAR</a>
+    <div class="search-bar">
+        <input type="text" placeholder="PESQUISAR..." aria-label="Pesquisar filmes" style="
+        margin-top: 0px;
+    ">
+      </div>
+  </div>
+
+  <div class="login-container">
+    <div class="login-form">
+      <h2>ENTRAR</h2>
+      <form id="login-form" action="../html/perfil.html" method="POST">
+        <div id="error-message" class="error-message" style="display: none; color: red;"></div>
+        
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="password" name="password" placeholder="Senha" required>
+        <input type="submit" value="Entrar">
+      </form>
+
+      <div class="forgot-password">
+        <a href="#">Esqueceu a senha?</a>
+      </div>
+
+      <div class="create-account">
+        <p>Não tem uma conta? <a href="../html/cadastro.html">Crie uma agora!</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 ARMO - Todos os direitos reservados.</p>
+    <p><a href="../html/termos.html">Termos de Uso</a> | <a href="../html/privacidade.html">Política de Privacidade</a> | <a href="../html/contato.html">Contato</a></p>
+    <p>Endereço: Rua Marquês de Paranaguá, 111 - Consolação, São Paulo - SP, 01303-050</p>
+  </div>
+
+</body>
+</html>

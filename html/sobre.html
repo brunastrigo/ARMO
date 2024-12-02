@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilosobre.css">
+  <script src="../js/scriptsobre.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-images-left">
+      <img src="../images/Sol.png" alt="Imagem Esquerda 1" class="header-image">
+      <img src="../images/Sol1.png" alt="Imagem Esquerda 2" class="header-image">
+      <img src="../images/Sol.png" alt="Imagem Esquerda 3" class="header-image">
+    </div>
+    
+    <div class="header-content">
+      <h1><img src="../images/ARMO.png" alt="Logo ARMO" style="width: 250px;"></h1>
+      <p>O MUNDO FANTÁSTICO DO CINEMA BRASILEIRO</p>
+    </div>
+
+    <div class="header-images-right">
+      <img src="../images/Sol1.png" alt="Imagem Direita 1" class="header-image">
+      <img src="../images/Sol.png" alt="Imagem Direita 2" class="header-image">
+      <img src="../images/Sol1.png" alt="Imagem Direita 3" class="header-image">
+    </div>
+  </div>
+
+  <div class="topnav">
+    <a href="../index.html">Início</a>
+    <a href="../html/sobre.html" class="active">Sobre</a>
+    <a href="../html/jornal.html">Jornal</a>
+    <a href="../html/entrar.html">ENTRAR</a>
+    <div class="search-bar">
+        <input type="text" placeholder="PESQUISAR..." aria-label="Pesquisar filmes" style="
+        margin-top: 0px;
+    ">
+      </div>
+</div>
+
+<div class="about-content">
+    <h2>Sobre Nós</h2>
+  
+    <div class="about-text-image">
+      <img src="../images/armorial.jpg" alt="Movimento Armorial" class="about-image">
+      <div class="about-text">
+        <p>Bem-vindo à nossa página sobre o mundo do cinema fantástico brasileiro. O cinema fantástico brasileiro é uma verdadeira celebração da imaginação e da inovação. Ao longo das décadas, diretores e cineastas do Brasil têm explorado as fronteiras do terror, da ficção científica e da fantasia, trazendo à tona histórias que misturam o místico com o real, o sobrenatural com a cultura popular.</p>
+        <p>No ARMO, buscamos explorar e exaltar a riqueza e as diversas possibilidades desses gêneros, destacando filmes que, com muito mais do que efeitos especiais, se conectam com as raízes do Brasil, explorando seus mitos, medos, e seus futuros possíveis.</p>
+      </div>
+    </div>
+  
+    <p>O movimento Armorial, criado pelo artista Ariano Suassuna, busca celebrar a arte popular brasileira com um olhar contemporâneo. Esse movimento une tradição e inovação, elementos que também permeiam o cinema fantástico no Brasil. Ao explorar o sobrenatural e a magia dentro do contexto da cultura popular brasileira, o cinema armorial se conecta diretamente com o patrimônio cultural e folclórico, trazendo à tona histórias de luta, resistência e identidade nacional.</p>
+  
+    <div class="quote">
+      "A arte, para mim, deve ser uma manifestação do povo, deve traduzir a força da nossa cultura, com tudo o que ela tem de fantástico." Ariano Suassuna
+    </div>
+  
+    <p>Aqui, não estamos apenas explorando os filmes, mas também celebrando as mentes criativas que ousaram desafiar as convenções e criar obras que continuam a capturar a imaginação dos brasileiros e do mundo todo. Nosso objetivo é destacar as produções que merecem ser vistas, analisadas e discutidas.</p>
+  </div>
+  <div class="team-section">
+    <h2>Sobre os Criadores</h2>
+    
+    <div class="team-member">
+      <img src="../images/bruna.jpeg" alt="Bruna" class="team-photo">
+      <div class="member-info">
+        <h3>Bruna Trigo</h3>
+        <p><strong>Graduando em Design</strong> pela PUC-SP, com um interesse profundo em como o design pode contar histórias e engajar o público. Ao longo da sua trajetória acadêmica, tem se dedicado a explorar a relação entre a arte visual e o cinema, com especial foco na valorização do cinema nacional, sobretudo nos gêneros de terror, ficção científica e fantasia. Criador e idealizador deste site, busca fomentar discussões sobre a identidade cultural brasileira por meio da sétima arte, aliando o design à cultura popular.</p>
+      </div>
+    </div>
+  
+    <div class="team-member">
+      <img src="../images/anna.jpg" alt="Anna" class="team-photo">
+      <div class="member-info">
+        <h3>Anna Godoy</h3>
+        <p><strong>Graduando em Design</strong> pela PUC-SP, com experiência em projetos de identidade visual e design digital. Apaixonado por cinema e entusiasta do cinema brasileiro, especialmente nos gêneros fantásticos. Acredita no poder transformador do cinema como ferramenta de expressão e identidade cultural. Ao participar deste projeto, tem como objetivo explorar a riqueza do cinema nacional, trazendo à tona produções cinematográficas que merecem reconhecimento e mais visibilidade no cenário cultural.</p>
+      </div>
+    </div>
+  </div>  
+  <div class="contact-section">
+    <h2>Contate-Nos</h2>
+    
+    <form id="contact-form" onsubmit="validateContactForm(event)">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Seu telefone" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="4" placeholder="Sua mensagem" required></textarea>
+      </div>
+  
+      <button type="submit">Enviar</button>
+      
+      <div id="error-message" class="error-message" style="display: none;"></div>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 ARMO - Todos os direitos reservados.</p>
+    <p><a href="../html/termos.html">Termos de Uso</a> | <a href="../html/privacidade.html">Política de Privacidade</a> | <a href="../html/contato.html">Contato</a></p>
+    <p>Endereço: Rua Marquês de Paranaguá, 111 - Consolação, São Paulo - SP, 01303-050</p>
+  </div>
+
+</body>
+</html>  

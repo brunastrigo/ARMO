@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terror</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estiloterror.css">
+  <script src="../js/scriptterror.js"></script>
+
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-images-left">
+      <img src="../images/Sol.png" alt="Imagem Esquerda 1" class="header-image">
+      <img src="../images/Sol1.png" alt="Imagem Esquerda 2" class="header-image">
+      <img src="../images/Sol.png" alt="Imagem Esquerda 3" class="header-image">
+    </div>
+    
+    <div class="header-content">
+      <h1><img src="../images/ARMO.png" alt="Logo ARMO" style="width: 250px;"></h1>
+      <p>O MUNDO FANTÁSTICO DO CINEMA BRASILEIRO</p>
+    </div>
+
+    <div class="header-images-right">
+      <img src="../images/Sol1.png" alt="Imagem Direita 1" class="header-image">
+      <img src="../images/Sol.png" alt="Imagem Direita 2" class="header-image">
+      <img src="../images/Sol1.png" alt="Imagem Direita 3" class="header-image">
+    </div>
+  </div>
+
+  <div class="topnav">
+    <a href="../index.html">Início</a>
+    <a href="../html/sobre.html">Sobre</a>
+    <a href="../html/jornal.html">Jornal</a>
+    <a href="../html/entrar.html">ENTRAR</a>
+    <div class="search-bar">
+        <input type="text" placeholder="PESQUISAR..." aria-label="Pesquisar filmes" style="
+        margin-top: 0px;
+    ">
+      </div>
+    </div>
+    <div class="filter-bar">
+        <label for="year" style="margin-top: 5px; margin-bottom: 5px;">Ano:</label>
+        <select id="year" style="margin-top: 5px; margin-bottom: 5px;">
+            <option value="">Todos</option>
+            <option value="2020 - 2010">2020 - 2010</option>
+            <option value="2000 - 1990">2000 - 1990</option>
+            <option value="1980 - 1970">1980 - 1970</option>
+            <option value="1960 - 1950">1960 - 1950</option>
+            <option value="1940 - 1930">1940 - 1930</option>
+            <option value="1920 - 1910">1920 - 1910</option>
+        </select>
+       
+        <label for="rating" style="margin-top: 5px; margin-bottom: 5px;">Classificação:</label>
+        <select id="rating" style="margin-top: 5px; margin-bottom: 5px;">
+            <option value="">Todas</option>
+            <option value="10">+10</option>
+            <option value="12">+12</option>
+            <option value="14">+14</option>
+            <option value="16">+16</option>
+            <option value="18">+18</option>
+        </select>
+
+        <label for="popularity" style="margin-top: 5px; margin-bottom: 5px;">Popularidade:</label>
+        <select id="popularity" style="margin-top: 5px; margin-bottom: 5px;">
+            <option value="">Todos os tempos</option>
+            <option value="10">Essa Semana</option>
+            <option value="12">Esse Mês</option>
+            <option value="14">Esse Ano</option>
+        </select>
+
+        <label for="genre" style="margin-top: 5px; margin-bottom: 5px;">Subgênero:</label>
+        <select id="genre" style="margin-top: 5px; margin-bottom: 5px;">
+            <option value="terror" selected="">Terror</option>
+            <option value="comédia">Comédia</option>
+            <option value="crime">Crime</option>
+            <option value="documentário">Documentário</option>
+            <option value="drama">Drama</option>
+            <option value="familiar">Familiar</option>
+            <option value="fantasia">Fantasia</option>
+            <option value="ficção científica">Ficção Científica</option>
+            <option value="mistério">Mistério</option>
+            <option value="romance">Romance</option>
+            <option value="suspense">Suspense</option>
+        </select>
+     <a href="../html/terror20202010.html" id="filter-link">
+            <button id="filter-button">Filtrar</button>
+        </a>
+    </div>    
+    <div id="movieCards" class="main-content">
+        <div class="article">
+            <img src="..//images/ameianoite.jpg" alt="Filme de Terror 1">
+            <div class="text-overlay">
+                <h2><a href="../html/ameianoite.html" class="no-underline">À Meia-Noite Levarei Sua Alma</a></h2>
+                <p>1964</p>
+                <p>1h32m</p>
+                <p>José Mojica Marins</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/estanoite.jpg" alt="Filme de Terror 2">
+            <div class="text-overlay">
+                <h2>Esta Noite Encarnarei no teu Cadáver</h2>
+                <p>1966</p>
+                <p>1h48m</p>
+                <p>José Mojica Marins</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/asfabulasnegras.jpg" alt="Filme de Terror 3">
+            <div class="text-overlay">
+                <h2>As Fábulas Negras</h2>
+                <p>2015</p>
+                <p>1h45m</p>
+                <p>Rodrigo Aragão, José Mojica Marins, Petter Baiestorf</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/loboatrasdaporta.jpg" alt="Filme de Terror 4">
+            <div class="text-overlay">
+                <h2>O Lobo Atrás da Porta</h2>
+                <p>2014</p>
+                <p>1h41m</p>
+                <p>Fernando Coimbra</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/matemeporfavor.jpg" alt="Filme de Terror 5">
+            <div class="text-overlay">
+                <h2>Mate-me Por Favor</h2>
+                <p>2016</p>
+                <p>1h44m</p>
+                <p>Anita Rocha da Silveira</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/asboasmaneiras.jpg" alt="Filme de Terror 6">
+            <div class="text-overlay">
+                <h2>As Boas Maneiras</h2>
+                <p>2018</p>
+                <p>2h16m</p>
+                <p>Juliana Rojas</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/animalcordial.jpeg" alt="Filme de Terror 7">
+            <div class="text-overlay">
+                <h2>O Animal Cordial</h2>
+                <p>2018</p>
+                <p>1h38m</p>
+                <p>Gabriela Amaral Almeida</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/nododiabo.png" alt="Filme de Terror 8">
+            <div class="text-overlay">
+                <h2>O Nó do Diabo</h2>
+                <p>2018</p>
+                <p>2h08m</p>
+                <p>Ramon Porto Mota, Gabriel Martins, Ian Abé</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/matanegra.jpeg" alt="Filme de Terror 9">
+            <div class="text-overlay">
+                <h2>A Mata Negra</h2>
+                <p>2018</p>
+                <p>1h38m</p>
+                <p>Rodrigo Aragão</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/mortonaofala.png" alt="Filme de Terror 10">
+            <div class="text-overlay">
+                <h2>Morto Não Fala</h2>
+                <p>2019</p>
+                <p>1h50m</p>
+                <p>Dennison Ramalho</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/malnosso.jpg" alt="Filme de Terror 9">
+            <div class="text-overlay">
+                <h2>Mal Nosso</h2>
+                <p>2019</p>
+                <p>1h32m</p>
+                <p>Samuel Galli</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/clube.jpg" alt="Filme de Terror 9">
+            <div class="text-overlay">
+                <h2>O Clube dos Canibais</h2>
+                <p>2019</p>
+                <p>1h22m</p>
+                <p>Guto Parente</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 ARMO - Todos os direitos reservados.</p>
+        <p><a href="../html/termos.html">Termos de Uso</a> | <a href="../html/privacidade.html">Política de Privacidade</a> | <a href="../html/contato.html">Contato</a></p>
+        <p>Endereço: Rua Marquês de Paranaguá, 111 - Consolação, São Paulo - SP, 01303-050</p>
+      </div>
+    
+    </body>
+    </html>  

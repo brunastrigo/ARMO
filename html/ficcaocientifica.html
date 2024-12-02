@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficção Científica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estiloficcao.css">
+  <script src="../js/sciptficcao.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-images-left">
+      <img src="../images/Sol.png" alt="Imagem Esquerda 1" class="header-image">
+      <img src="../images/Sol1.png" alt="Imagem Esquerda 2" class="header-image">
+      <img src="../images/Sol.png" alt="Imagem Esquerda 3" class="header-image">
+    </div>
+    
+    <div class="header-content">
+      <h1><img src="../images/ARMO.png" alt="Logo ARMO" style="width: 250px;"></h1>
+      <p>O MUNDO FANTÁSTICO DO CINEMA BRASILEIRO</p>
+    </div>
+
+    <div class="header-images-right">
+      <img src="../images/Sol1.png" alt="Imagem Direita 1" class="header-image">
+      <img src="../images/Sol.png" alt="Imagem Direita 2" class="header-image">
+      <img src="../images/Sol1.png" alt="Imagem Direita 3" class="header-image">
+    </div>
+  </div>
+
+  <div class="topnav">
+    <a href="../index.html">Início</a>
+    <a href="../html/sobre.html">Sobre</a>
+    <a href="../html/jornal.html">Jornal</a>
+    <a href="../html/entrar.html">ENTRAR</a>
+    <div class="search-bar">
+        <input type="text" placeholder="PESQUISAR..." aria-label="Pesquisar filmes" style="
+        margin-top: 0px;
+    ">
+      </div>
+    </div>
+    <div class="filter-bar">
+        <label for="year" style="margin-top: 5px; margin-bottom: 5px;">Ano:</label>
+        <select id="year" style="margin-top: 5px; margin-bottom: 5px;">
+            <option value="">Todos</option>
+            <option value="2020 - 2010">2020 - 2010</option>
+            <option value="2000 - 1990">2000 - 1990</option>
+            <option value="1980 - 1970">1980 - 1970</option>
+            <option value="1960 - 1950">1960 - 1950</option>
+            <option value="1940 - 1930">1940 - 1930</option>
+            <option value="1920 - 1910">1920 - 1910</option>
+        </select>
+       
+        <label for="rating" style="margin-top: 5px; margin-bottom: 5px;">Classificação:</label>
+        <select id="rating" style="margin-top: 5px; margin-bottom: 5px;">
+            <option value="">Todas</option>
+            <option value="10">+10</option>
+            <option value="12">+12</option>
+            <option value="14">+14</option>
+            <option value="16">+16</option>
+            <option value="18">+18</option>
+        </select>
+
+        <label for="popularity" style="margin-top: 5px; margin-bottom: 5px;">Popularidade:</label>
+        <select id="popularity" style="margin-top: 5px; margin-bottom: 5px;">
+            <option value="">Todos os tempos</option>
+            <option value="10">Essa Semana</option>
+            <option value="12">Esse Mês</option>
+            <option value="14">Esse Ano</option>
+        </select>
+
+        <label for="genre" style="margin-top: 5px; margin-bottom: 5px;">Subgênero:</label>
+        <select id="genre" style="margin-top: 5px; margin-bottom: 5px;">
+            <option value="terror">Terror</option>
+            <option value="comédia">Comédia</option>
+            <option value="crime">Crime</option>
+            <option value="documentário">Documentário</option>
+            <option value="drama">Drama</option>
+            <option value="familiar">Familiar</option>
+            <option value="fantasia">Fantasia</option>
+            <option value="ficção científica" selected="">Ficção Científica</option>
+            <option value="mistério">Mistério</option>
+            <option value="romance">Romance</option>
+            <option value="suspense">Suspense</option>
+        </select>
+            <button id="filter-button">Filtrar</button>
+        </a>
+    </div>    
+    <div class="main-content">
+        <div class="article">
+            <img src="../images/acquaria.jpg" alt="Filme de Ficção 1">
+            <div class="text-overlay">
+                <h2><a href="../html/acquaria.html" class="no-underline">Acquária</a></h2>
+                <p>2003</p>
+                <p>1h47m</p>
+                <p>Flavia Moraes</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/bacurau.jpg" alt="Filme de Ficção 2">
+            <div class="text-overlay">
+                <h2>Bacurau</h2>
+                <p>2019</p>
+                <p>2h10m</p>
+                <p>Kleber Mendonça Filho e Juliano Dornelles </p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/beta.jpg" alt="Filme de Ficção 3">
+            <div class="text-overlay">
+                <h2>Quem é Beta?</h2>
+                <p>1973</p>
+                <p>1h25m</p>
+                <p>Nelson Pereira dos Santos</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/bionicos.jpg" alt="Filme de Ficção 4">
+            <div class="text-overlay">
+                <h2>Biônicos</h2>
+                <p>2024</p>
+                <p>1h50m</p>
+                <p>Afonso Poyart</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/brancosai.jpeg" alt="Filme de Ficção 5">
+            <div class="text-overlay">
+                <h2>Branco Sai, Preto Fica</h2>
+                <p>2015</p>
+                <p>1h33m</p>
+                <p>Adirley Queirós</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/rapaterra.jpg" alt="Filme de Ficção 6">
+            <div class="text-overlay">
+                <h2>A Ilha do Terrível Rapaterra</h2>
+                <p>2006</p>
+                <p>1h20m</p>
+                <p>Ariane Porto</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/cosmonautas.jpg" alt="Filme de Ficção 7">
+            <div class="text-overlay">
+                <h2>Os Cosmonautas</h2>
+                <p>1962</p>
+                <p>1h29m</p>
+                <p>Víctor Lima</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/divinoamor.jpg" alt="Filme de Ficção 8">
+            <div class="text-overlay">
+                <h2>Divino Amor</h2>
+                <p>2019</p>
+                <p>1h41m</p>
+                <p>Gabriel Mascaro</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/espumas.jpg" alt="Filme de Ficção 9">
+            <div class="text-overlay">
+                <h2>O Jardim das Espumas</h2>
+                <p>1970</p>
+                <p>2h00m</p>
+                <p>Luiz Rosemberg Filho</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/futuro.jpg" alt="Filme de Ficção 10">
+            <div class="text-overlay">
+                <h2>O Homem do Futuro</h2>
+                <p>2011</p>
+                <p>1h46m</p>
+                <p>Cláudio Torres</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/nuvemrosa.jpg" alt="Filme de Ficção 9">
+            <div class="text-overlay">
+                <h2>A Nuvem Rosa</h2>
+                <p>2021</p>
+                <p>1h45m</p>
+                <p>Iuli Gerbase</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/umhomemso.jpg" alt="Filme de Ficção 9">
+            <div class="text-overlay">
+                <h2>Um Homem Só</h2>
+                <p>2016</p>
+                <p>1h34m</p>
+                <p>Cláudia Jouvin</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 ARMO - Todos os direitos reservados.</p>
+        <p><a href="../html/termos.html">Termos de Uso</a> | <a href="../html/privacidade.html">Política de Privacidade</a> | <a href="../html/contato.html">Contato</a></p>
+        <p>Endereço: Rua Marquês de Paranaguá, 111 - Consolação, São Paulo - SP, 01303-050</p>
+      </div>
+    
+    </body>
+    </html>  

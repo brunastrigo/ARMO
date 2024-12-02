@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantasia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilosfantasia.css">
+  <script src="../js/scriptfantasia.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-images-left">
+      <img src="../images/Sol.png" alt="Imagem Esquerda 1" class="header-image">
+      <img src="../images/Sol1.png" alt="Imagem Esquerda 2" class="header-image">
+      <img src="../images/Sol.png" alt="Imagem Esquerda 3" class="header-image">
+    </div>
+    
+    <div class="header-content">
+      <h1><img src="../images/ARMO.png" alt="Logo ARMO" style="width: 250px;"></h1>
+      <p>O MUNDO FANTÁSTICO DO CINEMA BRASILEIRO</p>
+    </div>
+
+    <div class="header-images-right">
+      <img src="../images/Sol1.png" alt="Imagem Direita 1" class="header-image">
+      <img src="../images/Sol.png" alt="Imagem Direita 2" class="header-image">
+      <img src="../images/Sol1.png" alt="Imagem Direita 3" class="header-image">
+    </div>
+  </div>
+
+  <div class="topnav">
+    <a href="../index.html">Início</a>
+    <a href="../html/sobre.html">Sobre</a>
+    <a href="../html/jornal.html">Jornal</a>
+    <a href="../html/entrar.html">ENTRAR</a>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="PESQUISAR..." aria-label="Pesquisar filmes" style="
+        margin-top: 0px;
+    ">
+      </div>
+    </div>
+    <div class="filter-bar">
+        <label for="year" style="margin-top: 5px; margin-bottom: 5px;">Ano:</label>
+        <select id="year" style="margin-top: 5px; margin-bottom: 5px;">
+            <option value="">Todos</option>
+            <option value="2020 - 2010">2020 - 2010</option>
+            <option value="2000 - 1990">2000 - 1990</option>
+            <option value="1980 - 1970">1980 - 1970</option>
+            <option value="1960 - 1950">1960 - 1950</option>
+            <option value="1940 - 1930">1940 - 1930</option>
+            <option value="1920 - 1910">1920 - 1910</option>
+        </select>
+       
+        <label for="rating" style="margin-top: 5px; margin-bottom: 5px;">Classificação:</label>
+        <select id="rating" style="margin-top: 5px; margin-bottom: 5px;">
+            <option value="">Todas</option>
+            <option value="10">+10</option>
+            <option value="12">+12</option>
+            <option value="14">+14</option>
+            <option value="16">+16</option>
+            <option value="18">+18</option>
+        </select>
+
+        <label for="popularity" style="margin-top: 5px; margin-bottom: 5px;">Popularidade:</label>
+        <select id="popularity" style="margin-top: 5px; margin-bottom: 5px;">
+            <option value="">Todos os tempos</option>
+            <option value="10">Essa Semana</option>
+            <option value="12">Esse Mês</option>
+            <option value="14">Esse Ano</option>
+        </select>
+
+        <label for="genre" style="margin-top: 5px; margin-bottom: 5px;">Subgênero:</label>
+        <select id="genre" style="margin-top: 5px; margin-bottom: 5px;">
+            <option value="terror">Terror</option>
+            <option value="comédia">Comédia</option>
+            <option value="crime">Crime</option>
+            <option value="documentário">Documentário</option>
+            <option value="drama">Drama</option>
+            <option value="familiar">Familiar</option>
+            <option value="fantasia" selected="">Fantasia</option>
+            <option value="ficção científica">Ficção Científica</option>
+            <option value="mistério">Mistério</option>
+            <option value="romance">Romance</option>
+            <option value="suspense">Suspense</option>
+        </select>
+            <button id="filter-button">Filtrar</button>
+        </a>
+    </div>    
+    <div class="main-content">
+        <div class="article">
+            <img src="../images/amarelo.jpg" alt="Filme de Fantasia 1">
+            <div class="text-overlay">
+                <h2><a href="../html/umanimalamarelo.html" class="no-underline">Um Animal Amarelo</a></h2>
+                <p>2021</p>
+                <p>1h55m</p>
+                <p>Felipe Bragança </p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/bale.jpg" alt="Filme de Fantasia 2">
+            <div class="text-overlay">
+                <h2>O Balé na Chuva</h2>
+                <p>2014</p>
+                <p>11m</p>
+                <p>Henrique Faria</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/asfabulasnegras.jpg" alt="Filme de Fantasia 3">
+            <div class="text-overlay">
+                <h2>As Fábulas Negras</h2>
+                <p>2015</p>
+                <p>1h45m</p>
+                <p>Rodrigo Aragão, José Mojica Marins, Petter Baiestorf</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/besouro.jpg" alt="Filme de Fantasia 4">
+            <div class="text-overlay">
+                <h2>Besouro</h2>
+                <p>2009</p>
+                <p>1h34m</p>
+                <p>João Daniel Tikhomiroff</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/duasdemim.jpg" alt="Filme de Fantasia 5">
+            <div class="text-overlay">
+                <h2>Duas de Mim</h2>
+                <p>2017</p>
+                <p>1h22m</p>
+                <p>Cininha de Paula</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/asboasmaneiras.jpg" alt="Filme de Fantasia 6">
+            <div class="text-overlay">
+                <h2>As Boas Maneiras</h2>
+                <p>2018</p>
+                <p>2h16m</p>
+                <p>Juliana Rojas</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/animalcordial.jpeg" alt="Filme de Fantasia 7">
+            <div class="text-overlay">
+                <h2>O Animal Cordial</h2>
+                <p>2018</p>
+                <p>1h38m</p>
+                <p>Gabriela Amaral Almeida</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/caminho.jpg" alt="Filme de Fantasia 8">
+            <div class="text-overlay">
+                <h2>Estranho Caminho</h2>
+                <p>2024</p>
+                <p>1h24m</p>
+                <p>Guto Parente</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/carrorei.jpg" alt="Filme de Fantasia 9">
+            <div class="text-overlay">
+                <h2>Carro Rei</h2>
+                <p>2022</p>
+                <p>1h37m</p>
+                <p>Renata Pinheiro</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/diamantino.jpg" alt="Filme de Fantasia 10">
+            <div class="text-overlay">
+                <h2>Diamantino</h2>
+                <p>2018</p>
+                <p>1h37m</p>
+                <p>Gabriel Abrantes e Daniel Schmidt</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/Sanguanel2.jpg" alt="Filme de Fantasia 9">
+            <div class="text-overlay">
+                <h2>A Maldição do Sanguanel</h2>
+                <p>2014</p>
+                <p>1h11m</p>
+                <p>Felipe M. Guerra, Eliseu Demari, Rafael Giovanella e Ricardo Ghiorzi</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="../images/espelho.jpg" alt="Filme de Fantasia 9">
+            <div class="text-overlay">
+                <h2>O Menino no Espelho</h2>
+                <p>2014</p>
+                <p>1h18m</p>
+                <p>Guilherme Fiúza Zenha</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 ARMO - Todos os direitos reservados.</p>
+        <p><a href="../html/termos.html">Termos de Uso</a> | <a href="../html/privacidade.html">Política de Privacidade</a> | <a href="../html/contato.html">Contato</a></p>
+        <p>Endereço: Rua Marquês de Paranaguá, 111 - Consolação, São Paulo - SP, 01303-050</p>
+      </div>
+    
+    </body>
+    </html>    

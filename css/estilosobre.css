@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .header {
+    background-color: #2f2e2e;
+    padding: 70px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 200px;
+  }
+  
+  .header-images-left, .header-images-right {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  .header-image {
+    width: 70px;
+    height: auto;
+    margin: 0 5px;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffb0cb;
+  }
+  
+  .header p {
+    font-size: 18px;
+  }
+  
+  .topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2e2e;
+    padding: 10px 0;
+  }
+  
+  .topnav a {
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  .topnav a.active {
+    color: #ffb0cb;
+    font-weight: bold;
+  }
+  
+  .topnav a:hover {
+    background-color: #fcb041;
+    color: #2f2e2e;
+    border-radius: 8px;
+    transform: scale(0.95);
+    padding: 8px 15px;
+  }
+  
+  .search-bar {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #656360;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  .search-bar input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #656360;
+    border-radius: 5px;
+    outline: none;
+    background-color: #656360;
+    color: #fff;
+  }
+  
+  .search-bar input:hover {
+    border: 1px solid #fcb041;
+  }
+
+    .about-content {
+        margin: 40px 5%;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      
+      .about-content h2 {
+        font-size: 32px;
+        color: #2f2e2e;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        }
+      
+      .about-content p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      
+      .about-text-image {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      
+      .about-image {
+        max-width: 30%;
+        height: auto;
+        margin-right: 20px;
+        border-radius: 10px;
+      }
+      
+      .about-text {
+        flex: 1;
+      }
+      
+      .about-content .quote {
+        font-size: 24px;
+        font-style: italic;
+        color: #ffb0cb;
+        text-align: center;
+        margin: 40px 0;
+      }
+
+      .team-section {
+        margin-top: 40px;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .team-section h2 {
+        font-size: 28px;
+        color: #2f2e2e;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+      
+      .team-member {
+        display: inline-block;
+        text-align: center;
+        margin: 20px;
+        max-width: 300px;
+      }
+      
+      .team-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        object-fit: cover;
+      }
+      
+      .member-info h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 5px;
+      }
+      
+      .member-info p {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.4;
+        margin: 0;
+      }
+
+      .contact-section {
+        margin: 40px 5%;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 15px;
+        text-align: center;
+      }
+      
+      .contact-section h2 {
+        font-size: 32px;
+        color: #2f2e2e;
+        margin-bottom: 20px;
+      }
+      
+      .contact-section .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .contact-section label {
+        font-size: 16px;
+        color: #333;
+      }
+      
+      .contact-section input,
+      .contact-section textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+      
+      .contact-section input:focus,
+      .contact-section textarea:focus {
+        border-color: #ffb0cb;
+      }
+      
+      .contact-section button {
+        background-color: #ffb0cb;
+        color: #fff;
+        font-size: 18px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      
+      .contact-section button:hover {
+        background-color: #fcb041;
+      }
+      
+      .error-message {
+        color: #ff0000;
+        font-size: 16px;
+        margin-top: 20px;
+      } 
+        
+      .footer {
+        background-color: #2f2e2e;
+        text-align: center;
+        padding: 30px 20px;
+        color: #ffb0cb;
+      }
+      
+      .footer a {
+        color: #ffb0cb; 
+        text-decoration: none; 
+        font-weight: normal;
+        transition: color 0.3s ease;
+      }
+      
+      .footer a:hover {
+        color: #fcb041;
+      }
+      
+      .error-message {
+        display: none;
+        color: red;
+        font-size: 14px;
+        margin-bottom: 15px;
+        text-align: center;
+        padding: 10px;
+        background-color: #ffcccc;
+        border: 1px solid #ff0000;
+        border-radius: 5px;
+      }
+
+    @media (max-width: 1024px) {
+        .header {
+            flex-direction: column;
+            text-align: center;
+          }
+        
+          .header-images {
+            position: static; 
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+          }
+        
+          .header-image-left, .header-image-right {
+            width: 80px; 
+          }
+        
+        
+          .header h1 {
+            font-size: 30px;
+          }
+        
+          .header p {
+            font-size: 16px;
+          }
+        
+          topnav a {
+              font-size: 18px;
+              padding: 12px;
+            }
+          
+            .topnav {
+              flex-direction: column;
+            }
+            
+            .search-bar input {
+              width: 100%;
+              padding: 8px;
+              margin-top: 10px;
+            }
+    }

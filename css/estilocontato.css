@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.header {
+    background-color: #2f2e2e;
+    padding: 70px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 200px;
+}
+
+.header-images-left, .header-images-right {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header-image {
+    width: 70px;
+    height: auto;
+    margin: 0 5px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffb0cb;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2e2e;
+    padding: 10px 0;
+}
+
+.topnav a {
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.topnav a.active {
+    color: #ffb0cb;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    background-color: #fcb041;
+    color: #2f2e2e;
+    border-radius: 8px;
+    transform: scale(0.95);
+    padding: 8px 15px;
+}
+
+.search-bar {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #656360;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #656360;
+    border-radius: 5px;
+    outline: none;
+    background-color: #656360;
+    color: #fff;
+}
+
+.search-bar input:hover {
+    border: 1px solid #fcb041;
+}
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h2 {
+    font-size: 28px;
+    color: #656360;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  .contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #ffb0cb;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #ff9f00;
+  }
+  
+  .contact-info {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .contact-info h3 {
+    font-size: 22px;
+    color: #656360;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .contact-info a {
+    color: #fcb041;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer {
+    background-color: #2f2e2e;
+    text-align: center;
+    padding: 30px 20px;
+    color: #ffb0cb;
+  }
+  
+  .footer a {
+    color: #ffb0cb; 
+    text-decoration: none; 
+    font-weight: normal;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #fcb041;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .header-images {
+        position: static; 
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+      }
+    
+      .header-image-left, .header-image-right {
+        width: 80px; 
+      }
+    
+    
+      .header h1 {
+        font-size: 30px;
+      }
+    
+      .header p {
+        font-size: 16px;
+      }
+    
+      topnav a {
+          font-size: 18px;
+          padding: 12px;
+        }
+      
+        .topnav {
+          flex-direction: column;
+        }
+        
+        .search-bar input {
+          width: 100%;
+          padding: 8px;
+          margin-top: 10px;
+        }
+  
+    .contact-container {
+      padding: 20px;
+    }
+  }
